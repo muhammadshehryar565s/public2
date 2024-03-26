@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+<script>
+try {
+  
+  undefinedFunction();
+} catch (error) {
+  if (error instanceof ReferenceError) {
+    console.error("Reference error occurred:", error);
+  }
+   else if (error instanceof TypeError) {
+    console.error("Type error occurred:", error);
+  } 
+  else {
+    console.error("An error occurred:", error);
+  }
+}
+</script>
+
+</body>
+</html>

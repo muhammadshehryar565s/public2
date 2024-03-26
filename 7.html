@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+<script>
+function access_Array_Element(array, index) {
+    try {
+      const element = array[index];
+      console.log('Accessed element:', element);
+    } catch (error) {
+      if (error instanceof RangeError) {
+        console.log('Error: Invalid index.');
+      } else {
+        throw error; 
+      }
+    }
+  }
+  
+  const nums = [1, 2, 3, 4, 5];
+  access_Array_Element(nums, 5);
+</script>
+</html>
